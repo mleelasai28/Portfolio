@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY Portfolio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;500&family=Outfit:wght@300;500;800&family=Space+Mono&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="intro-layer">
+        <div class="nav-top interactive" style="position: absolute; top: 40px; left: 10%; right: 10%; display: flex; justify-content: space-between; z-index: 10;">
+            <!-- Professional Logo / Brand Name -->
+            <div class="logo" style="font-family: 'Orbitron';">DEV // PORTFOLIO</div>
+            
+            <!-- Professional Status -->
+            <div style="font-size: 0.9rem; font-family: 'Rajdhani';">AVAILABLE // FOR WORK</div>
+        </div>
+
+        <div class="ui-layer">
+            <!-- Standard Job Title -->
+            <h1 class="intro-h1">FRONT-END <br><span class="highlight">ENGINEER</span></h1>
+            
+            <!-- Professional Summary -->
+            <p class="intro-subtitle" style="font-size: 1.5rem; line-height: 1.6; color: #eee;">
+                "Building responsive, accessible, and <br> 
+                <span style="color: #00ffff; font-weight: bold; text-shadow: 0 0 25px rgba(0, 255, 255, 0.6);">performant web experiences.</span>"
+            </p>
+            
+            <!-- Standard Call to Action -->
+            <button class="btn-warp interactive" id="warpBtn">VIEW WORK</button>
+        </div>
+
+        <div id="canvas-container"></div>
+    </div>
+
+    <div id="main-portfolio">
+        <div class="cursor-dot"></div>
+        <div class="cursor-outline"></div>
+
+        <header>
+            <nav>
+                <div class="logo">&lt;Front-End Developer&gt;</div>
+                <div class="nav-links">
+                    <a href="#work">Projects</a>
+                    <a href="#about">About</a>
+                    <a href="#contact" style="color: var(--primary);">Contact</a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+    <section class="hero">
+                <div class="hero-content">
+<p style="font-family: var(--font-code); color: var(--secondary); letter-spacing: 3px; text-transform: uppercase;">
+    HELLO, I'M LEELA SAI MOPURI
+</p>                    <h1 class="portfolio-h1">Creative <br> <span class="glitch-wrapper"><span class="glitch-text" data-text="DEVELOPER">DEVELOPER</span></span></h1>
+                    <div class="profile-wrapper">
+        <img src="./images/profile.png" alt="My Profile" class="profile-pic">
+    </div>
+                <div>
+                    <article class="hero-card">
+    <p style="font-size: 1.1rem; line-height: 1.6;">
+        "I specialize in building scalable web applications that are both functional and visually engaging. 
+    </p>
+</article>
+                </div>
+                
+                <div style="position: absolute; top: 20%; left: 10%; width: 100px; height: 100px; border: 1px solid var(--border); transform: rotate(45deg); z-index: -1;"></div>
+                <div style="position: absolute; bottom: 20%; right: 10%; width: 150px; height: 150px; border: 1px solid var(--border); border-radius: 50%; z-index: -1;"></div>
+            </section>
+
+            <div class="marquee">
+    <div class="marquee-content">
+        SEMANTIC HTML • CSS3 & ANIMATIONS • JAVASCRIPT ES6+ • REACT ECOSYSTEM • GIT & GITHUB • RESPONSIVE DESIGN • WEB ACCESSIBILITY (A11Y) • REST APIs • 
+        SEMANTIC HTML • CSS3 & ANIMATIONS • JAVASCRIPT ES6+ • REACT ECOSYSTEM • GIT & GITHUB • RESPONSIVE DESIGN • WEB ACCESSIBILITY (A11Y) • REST APIs •
+    </div>
+</div>
+
+            <section class="stats" id="about">
+    <div class="stat-item">
+        <h3>3</h3>
+        <p>Major Projects</p>
+    </div>
+    <div class="stat-item">
+        <h3>10+</h3>
+        <p>Tech Skills</p>
+    </div>
+    <div class="stat-item">
+        <h3>&infin;</h3>
+        <p>Creative Ideas</p>
+    </div>
+</section>
+
+            <section class="project-grid" id="work">
+                <figure class="project-card">
+                    <img src="./images/p4.jpg" alt="Agriculture City">
+                    <figcaption class="project-info">
+                        <h2 style="font-size: 1.5rem; margin-bottom: 5px;">Mana Panta</h2>
+                        <p style="color: #aaa; margin-bottom: 10px;">HTML CSS</p>
+                        <a href="#" class="btn-neon">View Case Study</a>
+                    </figcaption>
+                </figure>
+                <figure class="project-card">
+                    <img src="./images/p2.png" alt="Virtual WhiteBoard">
+                    <figcaption class="project-info">
+                        <h2 style="font-size: 1.5rem; margin-bottom: 5px;">Real Time Gesture Based Virtual WhiteBoard</h2>
+                        <p style="color: #aaa; margin-bottom: 10px;">Python / OpenCV</p>
+                        <a href="#" class="btn-neon">View Case Study</a>
+                    </figcaption>
+                </figure>
+                <figure class="project-card">
+                    <img src="./images/p3.png" alt="Portfolio Website">
+                    <figcaption class="project-info">
+                        <h2 style="font-size: 1.5rem; margin-bottom: 5px;">My Portfolio</h2>
+                        <p style="color: #aaa; margin-bottom: 10px;">HTML5 / CSS / JS</p>
+                        <a href="#" class="btn-neon">View Case Study</a>
+                    </figcaption>
+                </figure>
+            </section>
+
+            <footer id="contact" style="text-align: center; padding: 100px 20px;">
+                <h2 style="font-size: 3rem; margin-bottom: 30px;">Let's Build The Future.</h2>
+                <a href="https://www.linkedin.com/in/mopuri-leela-sai-423299276/" class="btn-neon" style="font-size: 1.2rem; padding: 20px 40px;">Get In Touch</a>
+                <p style="margin-top: 50px; opacity: 0.5;">&copy; 2025 Mopuri Leela Sai. All Rights Reserved.</p>
+            </footer>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+</body>
+</html>
